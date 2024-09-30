@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212; /* Fondo negro */
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #1f1f1f; /* Fondo gris oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fcfef7;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+.menu-section {
+    background-image: url('https://st.depositphotos.com/2288675/3169/i/450/depositphotos_31693711-stock-photo-restaurant-reserved-table-sign.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.menu-section p {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1f1f1f; /* Fondo gris oscuro */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.welcome-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+.welcome-section p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.pizza-gallery-section {
+    padding: 50px 20px;
+    background-color: #121212; /* Fondo negro */
+    text-align: center;
+}
+
+.pizza-gallery-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffa500;
+}
+
+.pizza-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pizza-item {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    text-align: left;
+}
+
+.pizza-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+}
+
+.pizza-info {
+    padding: 15px;
+}
+
+.pizza-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffa500;
+}
+
+.pizza-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.pizza-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+
+    .menu-section h1 {
+        font-size: 36px;
+    }
+
+    .menu-section p {
+        font-size: 18px;
+
+    }
+
+    .welcome-section h2 {
+        font-size: 28px;
+    }
+
+    .pizza-gallery-section h2 {
+        font-size: 28px;
+    }
+
+    .pizza-item {
+        width: 100%;
+    }
+}
