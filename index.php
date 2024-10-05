@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo">
-        <img src="images/LOGO.png" style="width: 200px; height: auto;" alt="tenedor Logo">
+        <img src="images/BENDITO-LOGO2.png" style="width: 200px; height: auto;" alt="tenedor Logo">
         </div>
         <nav>
             <ul>

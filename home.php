@@ -17,13 +17,13 @@ if (!isset($_SESSION['loggedin'])) {
 <body>
     <header>
         <div class="logo">
-            <img src="images/LOGO.png" alt="Tenedor Logo">
+            <img src="images/BENDITO-LOGO2.png" alt="Tenedor Logo">
         </div>
         <nav>
-            <ul>
+        <ul>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="about.php">Sobre Nosotros</a></li>
-                <li><a href="menu.php">Menú</a></li>
+                <li><a href="reservations.php">Reservas</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
